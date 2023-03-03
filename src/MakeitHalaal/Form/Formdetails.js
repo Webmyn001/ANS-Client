@@ -12,7 +12,7 @@ function Formdetails() {
   const [AcctNo, setAcctNo] = useState("")
   const [Shortnote, setShortnote] = useState("")
   const [Whatsapp, setWhatsapp] = useState("")
-  const [IDcardImage, setIDcardimag]= useState("")
+  const [images, setimages]= useState("")
 
   const navigate = useNavigate();
   
@@ -22,7 +22,7 @@ function Formdetails() {
      
     
 
-    axios.post("http://localhost:4000/api/lessons/add", {Name,School,BankName,AcctName,AcctNo,Whatsapp,Shortnote,IDcardImage})
+    axios.post("http://localhost:4000/api/lessons/add", {Name,School,BankName,AcctName,AcctNo,Whatsapp,Shortnote,images})
     .then((res)=>
     { 
     console.log("saved succesfully")
@@ -96,9 +96,20 @@ const OnchangeShortnote =(e)=> {
 }
 
  const OnchangefileID = async (e) => { 
-  const file = e.target.files[0];
-  const base64 = await convertBase64(file)
-  setIDcardimag(base64);
+  const files = Array.from(e.target.files);
+  setimages([]);
+ 
+  files.forEach(file => {
+    const reader = new FileReader();
+    reader.onload=() => {
+      if (reader.readyState ===2 ){
+        setimages(oldArray => [...oldArray, reader.result]);
+      }
+    }
+    reader.readAsDataURL(file)
+  })
+
+  
  }
 
 
@@ -136,10 +147,10 @@ console.log(Name,School,BankName,AcctName,AcctNo,Whatsapp,Shortnote, )
 
 
                 <h1 className='pt-5 text-[#fff8ea] font-semibold text-xl'>Proof of Studentship</h1>
-               <label htmlFor='file'  className=" text-[#fff8ea] py-1 ">Student ID card</label>
-                <input  type='file'  name='IDcardimage' onChange={OnchangefileID}
+               <label htmlFor='file'  className=" text-[#fff8ea] py-1 text-xs">kindly upload two images School ID card and Jamb Admission Letter </label>
+                <input  type='file'  name='images' onChange={OnchangefileID}
                 className=" border-[#0b0f11] focus:outline-0 
-                sm:w-[400px] w-[250px] border-2 rounded-lg px-3 text-[#0f0e0c]"/>
+                sm:w-[400px] w-[250px] border-2 rounded-lg px-3 text-[#0f0e0c]" multiple/>
                     
                      
                    
