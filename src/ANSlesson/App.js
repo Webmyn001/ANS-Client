@@ -29,7 +29,7 @@ function App() {
          <Route exact path="/fulldetails/:id" element = {<Fulldetails/>}></Route>
                   
                   
-         
+                
 
      
       </Routes>
