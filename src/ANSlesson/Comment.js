@@ -110,7 +110,7 @@ console.log(Name, Level, Department)
             <ol className="text-xl font-semiold tracking-wide text-[#7f030d]">
                 <li> <span className="text-center font-bold text-[#7f030d]  capitalize"> {comment.Name}</span> </li>
                 <li>  <span className=" text-center font-semibold text-[#7f030d] " >{comment.School}</span> </li>
-                <li>   <span className="italic text-center font-bold text-[#7f030d] " >{comment.Department} {comment.Level}</span></li>
+                <li>   <span className="italic text-center font-bold text-[#7f030d] " data-aos="fade-right">{comment.Department} {comment.Level}</span></li>
                 <li> <span className=" text-center text-[#7f030d] "><Typewriter 
              options={{
               autoStart:true,
