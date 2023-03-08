@@ -37,22 +37,22 @@ function Lessons() {
                             
                           <div  key={i} className="flex   items-center justify-center" data-aos="zoom-in">
                             <div  className="flex bg-gradient-to-b  from-[#f3e1c1] to-[#fefbe9]
-                             flex-col rounded-md items-center justify-center w-[400px] md:w-[500px]  shadow-2xl my-8 ">
+                             flex-col rounded-md items-center justify-center w-[350px] md:w-[500px]  pt-2 shadow-2xl my-8 ">
 
                          
-              <img src={info.image1[0].url}
-              alt="..." className='rounded-md object-cover' />
+              <img src={info.images[0].url}
+              alt="..." className='rounded-md object-cover object-fit h-[250px]  w-[300px]' />
 
                               
-                            <h1 className="text-2xl text-[#7f030d] font-bold p-8 pt-1 pb-0 mt-1">  {info.Title} </h1>
+                            <h1 className="text-xl text-center text-[#7f030d] font-bold p-8 pt-1 pb-0 mt-1">  {info.Title} </h1>
 
                               
                               
                               
-                              <div className="flex px-8 py-2 text-[#7f030d] font-semibold w-full justify-between">
+                              <div className="flex px-8 py-2 text-[#7f030d] font-semibold w-full items-center justify-end">
                               
                              <Link to={ {pathname:`/fulldetails/${info._id}`}}  state={info}>
-                              <h1 className="text-sm sm:text-xl text-[#7f030d]  font-semibold pt-0 ">View lecture</h1>
+                              <h1 className="text-xs sm:text-sm text-[#7f030d]  font-semibold pt-0 ">View lecture</h1>
                               </Link>
 
                             </div>   

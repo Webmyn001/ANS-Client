@@ -36,7 +36,7 @@ import Typewriter from "typewriter-effect"
         {/* Home image */}
     <div className="md:flex md:gap-x-5 md:flex-row flex flex-col items-center justify-center gap-y-5">
         
-        <div><HomeImage/></div>
+        <div data-aos="flip-right"><HomeImage/></div>
           
           <div className="w-[350px] sm:w-[400px] md:w-[500px] flex flex-col"> 
          <h2 className="text-[#7f030d] text-xl text-center p-4 font-semibold ">
@@ -50,16 +50,16 @@ import Typewriter from "typewriter-effect"
            />
           </h2>
 
-         <h2 className="pt-4 text-center text-sm"> 
+         <h2 className="pt-4 text-center text-sm" data-aos="fade-right"> 
            Kindly <Link to="/lesson"> 
            <button className="text-[#1048a9]">Click here</button></Link> to 
            veiw lectures available.
             </h2>
 
-            <h2 className="pt-4 text-center text-sm"> 
+            <h2 className="pt-4 text-center text-sm" data-aos="zoom-in"> 
            You can also <Link to="/comment"> 
            <button className="text-[#1048a9]">Click here</button></Link> to 
-           drop your comments about the lectures.
+           drop your comment about the lectures.
             </h2>
  
        

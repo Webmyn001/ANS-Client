@@ -20,37 +20,51 @@ function Fulldetails(props) {
     <div>
             <div className=" bg-gradient-to-t  text-[#7f030d] from-white to-[#fffadd] flex items-center  justify-center ">
                <div className="flex flex-col items-center  max-w-[400px] sm:max-w-[500px] md:max-w-[800px] shadow-2xl justify-center">
-             <h1 className="font-bold text-xl sm:text-2xl px-5 py-5" data-aos="fade-up"> {data.Title}</h1>
-             <h1 className="font-semibold text-base sm:text-xl px-9 py-5" data-aos="fade-up"> {data.Subtitle}</h1>
+             <h1 className="font-bold text-xl sm:text-2xl px-5 py-3" data-aos="fade-up"> {data.Title}</h1>
+             <h1 className="font-medium text-base sm:text-xl px-9 pt-3" data-aos="fade-right"> {data.Subtitle}</h1>
                   {/* body1 */}
-               <h3 className="font-medium text-base md:text-xl px-5 py-4" data-aos="fade-right">  {data.Body1}</h3>
+               <h3 className=" text-base  md:text-xl px-5 pt-2" data-aos="fade-right">  {data.Body1}</h3>
                    {/* body2 */}
-               <p className="font-medium  text-base md:text-xl px-7 py-4" data-aos="fade-left"> {data.Body2}</p>
+               <p className="text-base md:text-xl px-5 py-2" data-aos="fade-left"> {data.Body2}</p>
 
                {/*  image1 */}
         <div className='pt-4' data-aos="zoom-in">
-         <img src={data.image1[0].url} alt="..." className='object-cover
-           shadow-sm w-[350px] sm:h-[500px] sm:w-[600px]'/>
+         <img src={data.images[0].url} alt="..." className='object-cover
+           shadow-sm rounded-sm h-[400px] w-[350px] sm:h-[500px] sm:w-[500px]'/>
         </div>
                {/* body 3 */}
-           <p className="font-medium text-base  sm:text-xl px-7 py-4" data-aos="fade-right"> {data.Body3}</p>
-             
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
+           
+           {/* body4 */}
+
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body4}</p> 
+
+             {/* body5 */}
+
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body5}</p>
 
              {/* image2 */}
-               <div className='pt-4' data-aos="zoom-in">
-         <img src={data.image1[1].url} alt="..." className='object-cover
-           shadow-sm w-[350px] sm:h-[500px] sm:w-[600px]'/>
+             <div className='pt-4' data-aos="zoom-in">
+         <img src={data.images[1].url} alt="..." className='object-cover
+           shadow-sm rounded-sm h-[450px] w-[350px] sm:h-[500px] sm:w-[600px]'/>
         </div>
+             {/* body6 */}
+
+             <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body6}</p>
+             
+              {/* body7 */}
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body7}</p>
+
 
         {/* image3 */}
 
         <div className='pt-8' data-aos="zoom-in">
-         <img src={data.image1[2].url} alt="..." className='object-cover
-           shadow-sm w-[350px] sm:h-[500px] sm:w-[600px]'/>
+         <img src={data.images[2].url} alt="..." className='object-cover
+           shadow-sm rounded-sm h-[400px] w-[350px] sm:h-[500px] sm:w-[600px]'/>
         </div>
-                        {/* body 4 conclusion */}
+                        {/* body 8 conclusion */}
 
-         <p className="font-medium text-base sm:text-xl px-7  py-4" data-aos="fade-left"> {data.Body4}</p>
+         <p className="text-base sm:text-xl px-5  py-3" data-aos="fade-left"> {data.Body8}</p>
                 
              <div className="flex flex-col items-start pl-5 pb-3 pt-4 text-gray-700 font-semibold w-full justify-center">
                               
@@ -62,7 +76,7 @@ function Fulldetails(props) {
                  
                    <div>
                     <div className='flex justify-center items-center'>
-                    <Link to="/dashboard">
+                    <Link to="/">
                    <button className=" px-8 mt-4 py-3 text-white font-bold font-mono
                    tracking-wide bg-[#7f030d]  rounded-full">Back</button>
                    </Link>

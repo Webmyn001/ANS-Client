@@ -103,14 +103,14 @@ console.log(Name, Level, Department)
         getcomments.map((comment)=>(
          
           <div className="shadow-sm 
-          p-5  m-3  border-l-8 border-2 border-[#7f030d] flex justify-between items-center rounded-lg"key={comment._id} data-aos="zoom-in">
+          p-2  m-3  border-l-8 border-2 border-[#7f030d] flex justify-between items-center rounded-lg"key={comment._id} data-aos="zoom-in">
                
                 
            
-            <ol className="text-xl font-semiold tracking-wide text-[#7f030d]">
-                <li> <span className="text-center font-bold text-[#7f030d]  capitalize"> {comment.Name}</span> </li>
-                <li>  <span className=" text-center font-semibold text-[#7f030d] " >{comment.School}</span> </li>
-                <li>   <span className="italic text-center font-bold text-[#7f030d] " data-aos="fade-right">{comment.Department} {comment.Level}</span></li>
+            <ol className="text-xs font-semiold text-center tracking-wide text-[#7f030d]">
+                <li> <span className="text-center font-semibold text-[#7f030d]  capitalize" data-aos="flip-right"> {comment.Name}</span> </li>
+                <li>  <span className=" text-center font-semibold text-[#7f030d] "  data-aos="flip-right">{comment.School}</span> </li>
+                <li>   <span className="italic text-center font-semibold text-[#7f030d] " data-aos="flip-right">{comment.Department} {comment.Level}</span></li>
                 <li> <span className=" text-center text-[#7f030d] "><Typewriter 
              options={{
               autoStart:true,
