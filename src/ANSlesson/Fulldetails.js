@@ -30,7 +30,7 @@ function Fulldetails(props) {
                {/*  image1 */}
         <div className='pt-4' data-aos="zoom-in">
          <img src={data.images[0].url} alt="..." className='object-cover
-           shadow-sm rounded-sm h-[400px] w-[350px] sm:h-[500px] sm:w-[500px]'/>
+           shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[500px]'/>
         </div>
                {/* body 3 */}
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
@@ -46,7 +46,7 @@ function Fulldetails(props) {
              {/* image2 */}
              <div className='pt-4' data-aos="zoom-in">
          <img src={data.images[1].url} alt="..." className='object-cover
-           shadow-sm rounded-sm h-[450px] w-[350px] sm:h-[500px] sm:w-[600px]'/>
+           shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[600px]'/>
         </div>
              {/* body6 */}
 
@@ -60,7 +60,7 @@ function Fulldetails(props) {
 
         <div className='pt-8' data-aos="zoom-in">
          <img src={data.images[2].url} alt="..." className='object-cover
-           shadow-sm rounded-sm h-[400px] w-[350px] sm:h-[500px] sm:w-[600px]'/>
+           shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[600px]'/>
         </div>
                         {/* body 8 conclusion */}
 
