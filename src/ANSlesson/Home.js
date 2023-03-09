@@ -4,6 +4,7 @@ import HomeImage from "./HomeImage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect"
+import axios from "axios";
 
 
  const Home =()=> {
@@ -15,11 +16,26 @@ import Typewriter from "typewriter-effect"
    
   const [open, setOpen] = useState(false)
 
+  const [getcomments, setgetcomments] =useState([])
+  console.log(getcomments)
+  const getComments = async ()=> {
+    axios.get("https://easy-crown-bull.cyclic.app/api/comment/")
+    .then((res)=> setgetcomments(res.data) )
+    .catch((err)=> console.log(err))
+   }
+// set comments to get random three elements in the array
+   const ShuffledArray = getcomments.sort(() => 0.5- Math.random())
+   const shuffled3 = ShuffledArray.slice(0, 3);
+
+
+
   useEffect(()=>{
+    getComments();
     setInterval(()=>{
      setOpen(true)
      },3000)
     },[])
+
 
     return(
         <div className="bg-gradient-to-t min-h-screen text-[#7f030d] from-white to-[#fffadd] shadow-sm ">
@@ -66,7 +82,40 @@ import Typewriter from "typewriter-effect"
          </div>
       
      </div>
-        
+            
+            {/* first three Comments */}
+        <div className="pt-7">
+        {
+        shuffled3.map((comment)=>(
+         
+          <div className="shadow-sm 
+          p-2  m-3  border-l-8 border-2 border-[#7f030d] flex justify-center items-center rounded-lg"key={comment._id} data-aos="zoom-in">
+               
+                
+           
+            <ol className="text-xs font-semiold text-center tracking-wide text-[#7f030d]">
+                <li> <span className="text-center font-semibold text-[#7f030d]  capitalize" data-aos="flip-right"> {comment.Name}</span> </li>
+                <li>  <span className=" text-center font-semibold text-[#7f030d] "  data-aos="flip-right">{comment.School}</span> </li>
+                <li>   <span className="italic text-center font-semibold text-[#7f030d] " data-aos="flip-right">{comment.Department} {comment.Level}</span></li>
+                <li> <span className=" text-center text-[#7f030d] "><Typewriter 
+             options={{
+              autoStart:true,
+              loop:true,
+              delay: 50,
+              strings:`${comment.Comment}`
+             }}
+           />
+           </span> </li>
+
+                
+    
+            </ol>
+
+
+        </div>
+        ))
+      }
+        </div>
  </div>
     )
  }

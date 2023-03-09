@@ -103,7 +103,7 @@ console.log(Name, Level, Department)
         getcomments.map((comment)=>(
          
           <div className="shadow-sm 
-          p-2  m-3  border-l-8 border-2 border-[#7f030d] flex justify-between items-center rounded-lg"key={comment._id} data-aos="zoom-in">
+          p-2  m-3  border-l-8 border-2 border-[#7f030d] flex justify-center items-center rounded-lg"key={comment._id} data-aos="zoom-in">
                
                 
            
