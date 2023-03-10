@@ -34,10 +34,10 @@ function Comment() {
     { 
     console.log("saved succesfully")
     navigate("/");
-    alert("form submitted succesfully")
+    alert("Thank you, Your comment is submitted succesfully.")
   }).catch((err)=> {
       console.log(err)
-      alert("Unable to submit form, kindly complete the form")
+      alert("Unable to submit comment, kindly complete the form.")
     })
  }
 
@@ -67,6 +67,10 @@ console.log(Name, Level, Department)
     
   }
 
+  const Load = ()=> {
+             alert("Please Wait ...")    
+  }
+
   useEffect(()=>{
     getComments()
   },[])
@@ -93,11 +97,11 @@ console.log(Name, Level, Department)
       <textarea placeholder=" Your Comment ... " value={Comment} onChange={OnchangeComment} 
      className= " border-[#130e0e] mt-3 focus:outline w-[200px] h-[100px] border-2 rounded-lg px-3 text-[#594545]"/>
 
-         <button className='bg-[#7f030d] px-2 mt-3 py-2 rounded-md text-white'>Post</button>
+         <button className='bg-[#7f030d] px-2 mt-3 py-2 rounded-md text-white' Onclick={Load}>Post</button>
       </form>
      
                   
-                  <h1 className='text-xl text-[#7f030d] pt-[50px] font-bold text-center'>Comments </h1>
+                  <h1 className='text-sm text-[#7f030d] pt-[50px] font-bold text-center'>Comments </h1>
 
                   {
         getcomments.map((comment)=>(
