@@ -30,7 +30,7 @@ function Fulldetails(props) {
                {/*  image1 */}
         <div className='pt-4' data-aos="zoom-in">
          <img src={data.images[0].url} alt="..." className='object-cover
-           shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[500px]'/>
+           shadow-sm rounded-md  p-2 sm:h-[500px] sm:w-[500px]'/>
         </div>
                {/* body 3 */}
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
@@ -76,7 +76,7 @@ function Fulldetails(props) {
                  
                    <div>
                     <div className='flex justify-center items-center'>
-                    <Link to="/">
+                    <Link to="/lesson">
                    <button className=" px-8 mt-4 py-3 text-white font-bold font-mono
                    tracking-wide bg-[#7f030d]  rounded-full">Back</button>
                    </Link>
