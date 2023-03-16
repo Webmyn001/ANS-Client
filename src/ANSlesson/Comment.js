@@ -95,7 +95,7 @@ console.log(Name, Level, Department)
 
       <label className=" font-semibold  pt-2 text-xl py-1 ">Comment</label>
       <textarea placeholder=" Your Comment ... " value={Comment} onChange={OnchangeComment} 
-     className= " border-[#130e0e] mt-3 focus:outline w-[200px] h-[100px] border-2 rounded-lg px-3 text-[#594545]"/>
+     className= " border-[#130e0e] mt-3 focus:outline-0 w-[250px] h-[100px] border-2 rounded-lg px-3 text-[#594545]"/>
 
          <button className='bg-[#7f030d] px-2 mt-3 py-2 rounded-md text-white' Onclick={Load}>Post</button>
       </form>
