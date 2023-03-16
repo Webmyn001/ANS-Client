@@ -26,15 +26,14 @@ function Fulldetails(props) {
                <h3 className=" text-base  md:text-xl px-5 pt-2" data-aos="fade-right">  {data.Body1}</h3>
                    {/* body2 */}
                <p className="text-base md:text-xl px-5 py-2" data-aos="fade-left"> {data.Body2}</p>
-
+                    {/* body 3 */}
+          <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
                {/*  image1 */}
         <div className='pt-4' data-aos="zoom-in">
          <img src={data.images[0].url} alt="..." className='object-cover
            shadow-sm rounded-md  p-2 sm:h-[500px] sm:w-[500px]'/>
         </div>
-               {/* body 3 */}
-           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
-           
+
            {/* body4 */}
 
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body4}</p> 
@@ -43,28 +42,49 @@ function Fulldetails(props) {
 
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body5}</p>
 
+           {/* body6 */}
+
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body6}</p>
+
+     {/* body7 */}
+
+     <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body7}</p>
+
              {/* image2 */}
-             <div className='pt-4' data-aos="zoom-in">
+             <div className='pt-4' data-aos="fade-left">
          <img src={data.images[1].url} alt="..." className='object-cover
            shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[600px]'/>
         </div>
-             {/* body6 */}
+             {/* body8 */}
 
-             <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body6}</p>
+             <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body8}</p>
              
-              {/* body7 */}
-           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body7}</p>
+              {/* body9 */}
+           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body9}</p>
+              {/* body10 */}
+              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body10}</p>
+              {/* body11 */}
+              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body11}</p>
+              {/* body12 */}
+              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body12}</p>
 
-
-        {/* image3 */}
+            {/* image3 */}
 
         <div className='pt-8' data-aos="zoom-in">
          <img src={data.images[2].url} alt="..." className='object-cover
            shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[600px]'/>
         </div>
-                        {/* body 8 conclusion */}
 
-         <p className="text-base sm:text-xl px-5  py-3" data-aos="fade-left"> {data.Body8}</p>
+                      {/* body13 */}
+                      <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body13}</p>
+              {/* body14*/}
+              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body14}</p>
+              {/* body15*/}
+              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body15}</p>
+
+                        {/* body 16 conclusion */}
+
+         <p className="text-base sm:text-xl px-5  py-3" data-aos="fade-left"> {data.Body16}</p>
                 
              <div className="flex flex-col items-start pl-5 pb-3 pt-4 text-gray-700 font-semibold w-full justify-center">
                               

@@ -1,10 +1,14 @@
 import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 function About() {
   return (
     <div className='bg-gradient-to-t min-h-screen text-[#7f030d] from-white to-[#fffadd] '>
    <h1 className="text-center text-2xl sm:text-3xl pt-[7px] font-bold">About us</h1>
-<div className="flex flex-col justify-center items-center">
+<div className="flex flex-col justify-center items-center" data-aos="flip-right">
          <div className="w-[350px] sm:w-[500px] md:w-[600px] ">
             <h2 className="text-center p-4 font-semibold ">
              Make It Halal Ramadan Relief program commitee wish to asist students all over Nigeria Institution 

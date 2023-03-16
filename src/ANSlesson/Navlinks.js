@@ -10,6 +10,10 @@ function Navlinks (props) {
             name:"Lessons",
             link:"/lesson"
         },
+        {
+            name:"Comments",
+            link:"/comment"
+        },
         
         {
             name:" About Us",
