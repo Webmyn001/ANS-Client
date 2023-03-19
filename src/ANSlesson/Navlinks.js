@@ -16,7 +16,7 @@ function Navlinks (props) {
         },
         
         {
-            name:" About Us",
+            name:" About ",
             link:"/about"
         },
           
