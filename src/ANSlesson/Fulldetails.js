@@ -21,7 +21,7 @@ function Fulldetails(props) {
             <div className=" bg-gradient-to-t  text-[#7f030d] from-white to-[#fffadd] flex items-center  justify-center ">
                <div className="flex flex-col items-center  max-w-[400px] sm:max-w-[500px] md:max-w-[800px] shadow-2xl justify-center">
              <h1 className="font-bold text-xl text-center sm:text-2xl px-5 py-2" data-aos="fade-up"> {data.Title}</h1>
-             <h1 className="font-medium text-xl text-right px-5 pt-1" data-aos="fade-right"> {data.Subtitle}</h1>
+             <h1 className="font-medium text-xl text-center px-5 " data-aos="fade-right"> {data.Subtitle}</h1>
                   {/* body1 */}
              <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle1}</h1>
 
