@@ -1,8 +1,0 @@
-// mongodb+srv://muhyideen:yeseeroh@cluster0.acsritj.mongodb.net/?retryWrites=true&w=majority
-
-
-cloudinary.config({
-  cloud_name: "dwsjspwnt",
-  api_key: "398899769288939",
-  api_secret: "baec2HpxDpF1AwwMHYlxlFl7xjc"
-});

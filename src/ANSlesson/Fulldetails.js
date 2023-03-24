@@ -20,13 +20,17 @@ function Fulldetails(props) {
     <div>
             <div className=" bg-gradient-to-t  text-[#7f030d] from-white to-[#fffadd] flex items-center  justify-center ">
                <div className="flex flex-col items-center  max-w-[400px] sm:max-w-[500px] md:max-w-[800px] shadow-2xl justify-center">
-             <h1 className="font-bold text-xl sm:text-2xl px-5 py-3" data-aos="fade-up"> {data.Title}</h1>
-             <h1 className="font-medium text-base sm:text-xl px-5 pt-3" data-aos="fade-right"> {data.Subtitle}</h1>
+             <h1 className="font-bold text-xl text-center sm:text-2xl px-5 py-2" data-aos="fade-up"> {data.Title}</h1>
+             <h1 className="font-medium text-xl text-right px-5 pt-1" data-aos="fade-right"> {data.Subtitle}</h1>
                   {/* body1 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle1}</h1>
+
                <h3 className=" text-base  md:text-xl px-5 pt-2" data-aos="fade-right">  {data.Body1}</h3>
                    {/* body2 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle2}</h1>
                <p className="text-base md:text-xl px-5 py-2" data-aos="fade-left"> {data.Body2}</p>
                     {/* body 3 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle3}</h1>
           <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body3}</p>
                {/*  image1 */}
         <div className='pt-4' data-aos="zoom-in">
@@ -35,19 +39,19 @@ function Fulldetails(props) {
         </div>
 
            {/* body4 */}
-
+           <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle4}</h1>
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body4}</p> 
 
              {/* body5 */}
-
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle5}</h1>
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body5}</p>
 
            {/* body6 */}
-
+           <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle6}</h1>
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body6}</p>
 
      {/* body7 */}
-
+     <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle7}</h1>
      <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body7}</p>
 
              {/* image2 */}
@@ -56,16 +60,20 @@ function Fulldetails(props) {
            shadow-sm rounded-sm  p-2 sm:h-[500px] sm:w-[600px]'/>
         </div>
              {/* body8 */}
-
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle8}</h1>
              <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body8}</p>
              
               {/* body9 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle9}</h1>
            <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body9}</p>
               {/* body10 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle10}</h1>
               <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-right"> {data.Body10}</p>
               {/* body11 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle11}</h1>
               <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body11}</p>
               {/* body12 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle12}</h1>
               <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body12}</p>
 
             {/* image3 */}
@@ -76,10 +84,13 @@ function Fulldetails(props) {
         </div>
 
                       {/* body13 */}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle13}</h1>
                       <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body13}</p>
               {/* body14*/}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-left"> {data.Subtitle14}</h1>
               <p className=" text-base  sm:text-xl px-5 py-3" data-aos="fade-left"> {data.Body14}</p>
               {/* body15*/}
+             <h1 className="font-medium text-right text-xl px-5 pt-1" data-aos="fade-right"> {data.Subtitle15}</h1>
               <p className=" text-base  sm:text-xl px-5 py-3" data-aos="zoom-in"> {data.Body15}</p>
 
                         {/* body 16 conclusion */}
